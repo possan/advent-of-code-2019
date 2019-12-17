@@ -14,7 +14,7 @@ function assert(name, actual, expected) {
 
 function parselist(input) {
     if (typeof(input) === 'string') {
-        input = input.split(',').map(t => ~~t);
+        input = input.split(',').map(t => parseInt(t, 10));
     }
     return input;
 }
